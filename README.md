@@ -1,16 +1,19 @@
-# gemini_gdsc
+# Flutter_Gemini
 
-A new Flutter project.
+This application demonstrates the seamless integration of Gemini API into a Flutter project using two distinct methods: the HTTP POST method and leveraging Flutter packages for a more streamlined development process.
 
-## Getting Started
+## Features:
 
-This project is a starting point for a Flutter application.
+### Method 1: HTTP POST Integration
 
-A few resources to get you started if this is your first Flutter project:
+A dummy screen showcasing the integration of Gemini API using HTTP POST requests.
+Explore how to make API calls directly and handle responses in a Flutter application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Method 2: Package Integration
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Experience the integration of Gemini API using dedicated Flutter packages, enhancing development efficiency.
+Discover the simplicity and power of incorporating packages for Gemini API interactions within your Flutter app
+
+## Contributing:
+
+Contributions are welcome! Feel free to fork the project, make improvements, and submit pull requests..
