@@ -1,3 +1,3 @@
 class GeminiApiKey {
-  static const apiKey = "your-api-key";
+  static const apiKey = "Use-your-api-key";
 }

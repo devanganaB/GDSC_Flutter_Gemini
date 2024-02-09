@@ -38,6 +38,9 @@ dependencies:
   dash_chat_2: ^0.0.20
   http: ^1.2.0
   google_gemini: ^0.1.2
+  image_picker: ^1.0.7
+  camera: ^0.10.5+9
+  permission_handler: ^11.2.0
 
 dev_dependencies:
   flutter_test:

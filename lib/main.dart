@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:gemini_gdsc/textonly.dart';
 import 'package:gemini_gdsc/textwithimage.dart';
@@ -16,14 +18,68 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'gemini gdsc',
       theme: ThemeData(
+        // brightness: Brightness.dark,
+        // colorScheme: ColorScheme.dark(),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const Splashscreen(),
+      // const HomePage(),
       // const BotScreen(),
     );
   }
 }
+
+//------------splashscreen--------------------
+class Splashscreen extends StatefulWidget {
+  const Splashscreen({super.key});
+
+  @override
+  State<Splashscreen> createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => HomePage()));
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            color: Colors.black87,
+          ),
+          Center(
+            child: Image.asset(
+              // 'assets/gemini_splash.jpg',
+              'assets/Google-Gemini.png',
+              height: 500,
+              width: 500,
+              fit: BoxFit.contain,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(100.0),
+            child: Align(
+                alignment: Alignment.bottomCenter,
+                child: CircularProgressIndicator()),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+//----------------home-----------------------
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
